@@ -23,7 +23,7 @@ public class Customer{
     public void setName(String name){
         this.name = name;
     }
-    public getCashOnHand(){
+    public double getCashOnHand(){
         return cashOnHand;
     }
     public void addCash(double amount){
@@ -31,6 +31,14 @@ public class Customer{
     }
     public void buySnacks(double total){
         this.cashOnHand = this.cashOnHand - total;
+    }
+
+    @Override
+    public String toString()
+    {
+        String value1 = "id: " + id + "\n" + "Customer: " + name + "\n" + "cash: " + cashOnHand + "\n";
+
+        return value1;
     }
 
 

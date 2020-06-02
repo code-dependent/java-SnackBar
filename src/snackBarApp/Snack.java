@@ -44,9 +44,12 @@ public class Snack{
     public int getQuantity(){
         return quantity;
     }
+    public void addToQuantity(int quantity){
+        this.quantity = this.quantity + quantity;
+    }
 
     //Other Methods
-    public void purchase(int amount){
+    public void purchased(int amount){
         this.quantity = this.quantity - amount;
     }
     public double total(int quantity){
