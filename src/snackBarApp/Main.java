@@ -25,36 +25,56 @@ public class Main {
         // Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
         //     Print Customer 1 (Jane) Cash on hand.
         //     Print quantity of snack 3 (Pretzel).
+        System.out.println();
         customer1.buySnacks(snack3.total(1));
         snack3.purchased(1);
         System.out.println(customer1.getName() + " has $" + customer1.getCashOnHand() + " left. only " + snack3.getQuantity() + " " + snack3.getName() + "s left.");
         // Customer 2 (Bob) buys 2 of snack 4 (Soda).
         //     Print Customer 2 (Bob) Cash on Hand.
         //     Print quantity of snack 4 (Soda).
+        System.out.println();
         customer2.buySnacks(snack4.total(2));
         snack4.purchased(2);
         System.out.println(customer2.getName() + " has $" + customer2.getCashOnHand() + " left. only " + snack4.getQuantity() + " " + snack4.getName() + "s left.");
         //  Customer 1 (Jane) finds $10.
         //     Print Customer 1 (Jane) Cash on Hand.
+        System.out.println();
         customer1.addCash(10.00);
         System.out.println(customer1.getName() + " found $10.00. Now " + customer1.getName() + " has $" + customer1.getCashOnHand());
         //  Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
         //     Print Customer 1 (Jane) Cash on Hand.
         //     Print quantity of snack 2 (Chocolate Bar).
+        System.out.println();
         customer1.buySnacks(snack2.total(1));
         snack2.purchased(1);
         System.out.println(customer1.getName() + " has $" + customer1.getCashOnHand() + " left. only " + snack2.getQuantity() + " " + snack2.getName() + "s left.");
         // Add 12 more items to snack 3 (Pretzel).
         //     Print quantity of snack 3 (Pretzel).
+        System.out.println();
         snack3.addToQuantity(12);
         System.out.println("There are " + snack3.getQuantity() + " " + snack3.getName() + "s left.");
         //  Customer 2 (Bob) buys 3 of snack 3 (Pretzel).
         //     Print Customer 2 (Bob) Cash on hand.
         //     Print quantity of snack 3 (Pretzel).
+        System.out.println();
         customer2.buySnacks(snack3.total(3));
         snack3.purchased(3);
         System.out.println(customer2.getName() + " has $" + customer2.getCashOnHand() + " left. only " + snack3.getQuantity() + " " + snack3.getName() + "s left.");
-
+        //  Display each snack with
+        //     Name
+        //     Vending Machine Name
+        //     Quantity on hand
+        //     Total cost of all of the quantities of this snack on hand
+        System.out.println();
+        System.out.println("Snack: " + snack1.getName() + "\n" + "Vending Machine: " + machine1.getName() + "\n" + "Quantity: " + snack1.getQuantity() + "\n" + "Total Cost: " + snack1.total(snack1.getQuantity()) + "0");
+        System.out.println();
+        System.out.println("Snack: " + snack2.getName() + "\n" + "Vending Machine: " + machine1.getName() + "\n" + "Quantity: " + snack2.getQuantity() + "\n" + "Total Cost: " + snack2.total(snack2.getQuantity()) + "0");
+        System.out.println();
+        System.out.println("Snack: " + snack3.getName() + "\n" + "Vending Machine: " + machine1.getName() + "\n" + "Quantity: " + snack3.getQuantity() + "\n" + "Total Cost: " + snack3.total(snack3.getQuantity()) + "0");
+        System.out.println();
+        System.out.println("Snack: " + snack4.getName() + "\n" + "Vending Machine: " + machine2.getName() + "\n" + "Quantity: " + snack4.getQuantity() + "\n" + "Total Cost: " + snack4.total(snack4.getQuantity()) + "0");
+        System.out.println();
+        System.out.println("Snack: " + snack5.getName() + "\n" + "Vending Machine: " + machine2.getName() + "\n" + "Quantity: " + snack5.getQuantity() + "\n" + "Total Cost: " + snack5.total(snack5.getQuantity()) + "0");
 
 
 
