@@ -13,5 +13,26 @@ public class Customer{
         this.name = name;
         this.cashOnHand = cashOnHand;
     }
-    
+
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public getCashOnHand(){
+        return cashOnHand;
+    }
+    public void addCash(double amount){
+        this.cashOnHand = this.cashOnHand + amount;
+    }
+    public void buySnacks(double total){
+        this.cashOnHand = this.cashOnHand - total;
+    }
+
+
+
 }
